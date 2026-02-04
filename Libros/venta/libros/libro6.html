@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbit</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="../js/carrito.js"></script>
+</head>
+<body>
+<script>
+  localStorage.setItem("ultimoLibro", "El Hobbit");
+  localStorage.setItem("urlLibro", "libros/libro6.html");
+</script>
+<nav class="menu">
+  <a href="../index.html">Inicio</a> |
+  <a href="../catalogo.html">Libros</a> |
+  <a href="../buscar.html">Buscar</a> |
+  <a href="../carrito.html">Carrito</a> |
+  <a href="../sitiomapa.html">Mapa del sitio</a>  
+</nav>
+
+<nav class="breadcrumbs">
+  <a href="../index.html">Inicio</a>
+  <span>›</span>
+  <a href="../catalogo.html">Libros</a>
+  <span>›</span>
+  <span>Hobbit</span>
+</nav>
+
+<h1>Hobbit</h1>
+
+<img src="../imagenes/hobbit.jfif" width="200">
+
+<p>Aventura fantástica de Bilbo Bolsón en una misión inesperada.</p>
+
+<p><strong>Autor:</strong> J.R.R. Tolkien</p>
+<p><strong>Precio:</strong> $280</p>
+
+<h3>Comprar</h3>
+
+<form id="formCompra" data-titulo="Hobbit" data-precio="280">
+  Cantidad:
+  <input type="number" id="cantidad" min="1" max="5" required>
+  <br><br>
+
+  ¿Confirmar compra?
+  <input type="text" pattern="SI|NO" required title="Escriba SI o NO">
+  <br><br>
+
+  <button type="submit">Agregar al carrito</button>
+  <a href="../carrito.html" class="btn-carrito"> Ir al Carrito </a>
+</form>
+
+</body>
+</html>

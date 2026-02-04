@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/carrito.js"></script>
+</head>
+<body>
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav class="menu">
+  <a href="index.html">Inicio</a> |
+  <a href="catalogo.html">Libros</a> |
+  <a href="buscar.html">Buscar</a> |
+  <a href="carrito.html">Carrito</a> |
+  <a href="sitiomapa.html">Mapa del sitio</a>
+</nav>
+
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs">
+  <a href="index.html">Inicio</a>
+  <span>›</span>
+  <a href="catalogo.html">Libros</a>
+  <span>›</span>
+  <span>Carrito</span>
+</nav>
+<h2>Carrito de Compras</h2>
+<!-- MIGAJAS DINAMICAS, SE QUEDA EN EL ULTIMO LIBRO CONSULTADO -->
+<!-- <nav class="breadcrumbs" id="breadcrumbs"></nav> -->
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Libro</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody id="listaCarrito"></tbody>
+</table>
+
+<h3 id="total"></h3>
+</body>
+</html>

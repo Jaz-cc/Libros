@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quijote</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/carrito.js"></script>
+</head>
+<body>
+<script>
+  localStorage.setItem("ultimoLibro", "Quijote");
+  localStorage.setItem("urlLibro", "libros/libro3.html");
+</script>
+<nav class="menu">
+  <a href="../index.html">Inicio</a> |
+  <a href="../catalogo.html">Libros</a> |
+  <a href="../buscar.html">Buscar</a> |
+  <a href="../carrito.html">Carrito</a> |
+  <a href="../sitiomapa.html">Mapa del sitio</a>
+</nav>
+
+<nav class="breadcrumbs">
+  <a href="../index.html">Inicio</a>
+  <span>›</span>
+  <a href="../catalogo.html">Libros</a>
+  <span>›</span>
+  <span>Quijote</span>
+</nav>
+
+<h1>Quijote</h1>
+
+<img src="../imagenes/quijote.jfif" width="200">
+
+<p>DESCRIPCIÓN</p>
+<p>Clásico de la literatura española sobre las aventuras de un caballero idealista.</p>
+
+<p><strong>Autor:</strong> Miguel de Cervantes</p>
+<p><strong>Precio:</strong> $250</p>
+
+<h3>Comprar</h3>
+
+<form id="formCompra" data-titulo="Quijote" data-precio="250">
+  Cantidad:
+  <input type="number" id="cantidad" min="1" max="5" required>
+  <br><br>
+
+  ¿Confirmar compra?
+  <input type="text" pattern="SI|NO" required title="Escriba SI o NO">
+  <br><br>
+
+  <button type="submit">Agregar al carrito</button>
+  <a href="../carrito.html" class="btn-carrito"> Ir al Carrito </a>
+</form>
+
+</body>
+</html>

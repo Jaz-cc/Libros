@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orgullo</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="../js/carrito.js"></script>
+</head>
+<body>
+<script>
+  localStorage.setItem("ultimoLibro", "Orgullo y Prejuicio");
+  localStorage.setItem("urlLibro", "libros/libro7.html");
+</script>
+<nav class="menu">
+  <a href="../index.html">Inicio</a> |
+  <a href="../catalogo.html">Libros</a> |
+  <a href="../buscar.html">Buscar</a> |
+  <a href="../carrito.html">Carrito</a> |
+  <a href="../sitiomapa.html">Mapa del sitio</a>
+</nav>
+
+<nav class="breadcrumbs">
+  <a href="../index.html">Inicio</a>
+  <span>›</span>
+  <a href="../catalogo.html">Libros</a>
+  <span>›</span>
+  <span>Orgullo</span>
+</nav>
+
+<h1>Orgullo</h1>
+
+<img src="../imagenes/orgullo.jfif" width="200">
+
+<p>Novela romántica que explora las relaciones y prejuicios sociales.</p>
+
+<p><strong>Autor:</strong> Jane Austen</p>
+<p><strong>Precio:</strong> $200</p>
+
+<h3>Comprar</h3>
+
+<form id="formCompra" data-titulo="Orgullo" data-precio="200">
+  Cantidad:
+  <input type="number" id="cantidad" min="1" max="5" required>
+  <br><br>
+
+  ¿Confirmar compra?
+  <input type="text" pattern="SI|NO" required title="Escriba SI o NO">
+  <br><br>
+
+  <button type="submit">Agregar al carrito</button>
+  <a href="../carrito.html" class="btn-carrito"> Ir al Carrito </a>
+</form>
+
+</body>
+</html>

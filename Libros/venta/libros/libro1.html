@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Principito</title>
+  <script src="../js/carrito.js"></script>
+</head>
+<body>
+<script>
+  localStorage.setItem("ultimoLibro", "El Principito");
+  localStorage.setItem("urlLibro", "libros/libro1.html");
+</script>
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav class="menu">
+  <a href="../index.html">Inicio</a> |
+  <a href="../catalogo.html">Libros</a> |
+  <a href="../buscar.html">Buscar</a> |
+  <a href="../carrito.html">Carrito</a> |
+  <a href="../sitiomapa.html">Mapa del sitio</a>
+</nav>
+
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs">
+  <a href="../index.html">Inicio</a>
+  <span>›</span>
+  <a href="../catalogo.html">Libros</a>
+  <span>›</span>
+  <span>El Principito</span>
+</nav>
+
+<br><br>
+
+<h1>El Principito</h1>
+
+<img src="../imagenes/principito.jfif" width="200" alt="El Principito">
+
+<p>
+  Obra de Antoine de Saint-Exupéry que reflexiona sobre la vida,
+  la amistad y el amor desde una mirada infantil.
+</p>
+
+<p><strong>Autor:</strong> Antoine de Saint-Exupéry</p>
+<p><strong>Precio:</strong> $150</p>
+
+<h3>Comprar</h3>
+
+<form id="formCompra" data-titulo="EL Principito" data-precio="150">
+  Cantidad:
+  <input type="number"  id="cantidad" min="1" max="5" required>
+  <br><br>
+
+  ¿Confirmar compra?
+  <input type="text" pattern="SI|NO" required title="Escriba SI o NO">
+  <br><br>
+
+  <button type="submit">Agregar al carrito</button>
+  <a href="../carrito.html" class="btn-carrito"> Ir al Carrito </a>
+</form>
+</body>
+</html>

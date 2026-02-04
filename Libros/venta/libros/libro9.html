@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia en el País de las Maravillas</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="../js/carrito.js"></script>
+</head>
+<body>
+<script>
+  localStorage.setItem("ultimoLibro", "Alicia en el País de las Maravillas");
+  localStorage.setItem("urlLibro", "libros/libro9.html");
+</script>
+<nav class="menu">
+  <a href="../index.html">Inicio</a> |
+  <a href="../catalogo.html">Libros</a> |
+  <a href="../buscar.html">Buscar</a> |
+  <a href="../carrito.html">Carrito</a> |
+  <a href="../sitiomapa.html">Mapa del sitio</a>
+</nav>
+
+<nav class="breadcrumbs">
+  <a href="../index.html">Inicio</a>
+  <span>›</span>
+  <a href="../catalogo.html">Libros</a>
+  <span>›</span>
+  <span>Alicia en el País de las Maravillas</span>
+</nav>
+
+<h1>Alicia en el País de las Maravillas</h1>
+
+<img src="../imagenes/alicia.jfif" width="200">
+
+<p>Fantasía que sigue a Alicia en un mundo lleno de personajes peculiares.</p>
+<p><strong>Autor:</strong> Lewis Carroll</p>
+<p><strong>Precio:</strong> $190</p>
+
+<h3>Comprar</h3>
+
+<form id="formCompra" data-titulo="Alicia en el País de las Maravillas" data-precio="190">
+  Cantidad:
+  <input type="number" id="cantidad" min="1" max="5" required>
+  <br><br>
+
+  ¿Confirmar compra?
+  <input type="text" pattern="SI|NO" required title="Escriba SI o NO">
+  <br><br>
+
+  <button type="submit">Agregar al carrito</button>
+  <a href="../carrito.html" class="btn-carrito"> Ir al Carrito </a>
+</form>
+
+</body>
+</html>
